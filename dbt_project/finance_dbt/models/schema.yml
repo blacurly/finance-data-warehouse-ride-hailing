@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fact_financials
+    columns:
+      - name: ride_id
+        tests:
+          - not_null
+          - unique
+
+      - name: platform_revenue
+        tests:
+          - not_null
